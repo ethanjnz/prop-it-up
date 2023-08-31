@@ -1,17 +1,14 @@
 import logo from './logo.svg';
+import PersonCard from './components/PersonCard';
 import './App.css';
 
 function App() {
   return (
-    <div>
-      <h1>Hello Dojo</h1>
-      <h2>Things I need to do</h2>
-      <ul>
-        <li>Learn React</li>
-        <li>Climb Mt. Everest</li>
-        <li>Run a marathon</li>
-        <li>Feed the dogs</li>
-      </ul>
+    <div className='App'>
+      <PersonCard firstname={'Jane'} lastname={'Doe'} age={45} hair={'Black'} />
+      <PersonCard firstname={'John'} lastname={'Smith'} age={88} hair={'Brown'} />
+      <PersonCard firstname={'Millard'} lastname={'Fillmore'} age={50} hair={'Brown'} />
+      <PersonCard firstname={'Maria'} lastname={'Smith'} age={62} hair={'Brown'} />
     </div>
   );
 }
